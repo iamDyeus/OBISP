@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body,html{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 3%;
+    background: linear-gradient(90deg, #00DBDE 0%, #7674ED 39.06%, #E64CD7 75%);
+}
+
+
+.InputCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+.--title{
+    margin-bottom: 0.2%;
+}
+
+.--input-field{
+    margin-bottom: 2%;
+}
+
+
+
+.gradient-text{
+    display: inline;
+    background: -webkit-linear-gradient(270.19deg, #2D8CF4 36.27%, #E64CD7 68.39%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.--add-to-list{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    background: linear-gradient(90deg, #2D8CF4 0%, #E64CD7 0.01%, #00DBDE 100%);
+    border-radius: 8px;
+    border: none;
+}
+
+.--add-to-list:hover{
+    /* add a glow effect */
+    box-shadow: 0 0 10px #2D8CF4;
+    background: linear-gradient(90deg, #00DBDE 0%, #7674ED 39.06%, #E64CD7 75%);
+}
+
+
+
+.tasks .card{
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    transition: 0.5s;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+}

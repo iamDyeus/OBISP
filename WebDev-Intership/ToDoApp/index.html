@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application | By Arsh</title>
+
+    <!-- STYLES -->
+    <!-- BOOTSTRAP --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <!-- APP -->
+    <div class="app container-fluid d-md-inline-flex">
+
+        <!-- INPUT CARD -->
+        <div class=" InputCard container-fluid ">
+            
+            <!-- Card -->
+            <div class="card mb" style="max-width: 25rem; max-height: 30rem; border-radius: 20px;">
+            
+                <div class="card-body">
+                
+                    <!-- Title -->
+                    <div class="card-head" style="font-weight: 600; font-size: 2.25rem; text-align: center;">Your <div class="gradient-text">To-Do</div> App!</div>
+                    
+                    <!-- Line Below Title -->
+                    <hr style="width: 250px; border: 1px solid black; margin: auto; margin-bottom: 1.5rem; margin-top: 1rem;">
+
+                    <!-- Form -->
+                    <form>
+                        
+                        <!-- Title input -->
+                        <div class="form-group">
+                            <label for="title" class="card-title --title">Title</label>
+                            <input type="text" class="form-control --input-field" id="title" >
+                        </div>
+
+                        <!-- Description input -->
+                        <div class="form-group">
+                            <label for="description" class="card-title --title">Description</label>
+                            <textarea class="form-control --input-field" id="description" rows="5" style="resize: none;" ></textarea>
+                        </div>
+                    
+                    </form> <!-- End of Form -->
+
+                </div> <!-- End of card-body -->
+                
+                <!-- Add to List Button -->
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-primary --add-to-list">ADD TO LIST</button>
+                </div> <!-- End of Add to List Button -->
+
+
+            </div> <!-- End of Card -->
+
+        </div> <!-- End of INPUT CARD -->
+
+
+        <!-- TASKS CONTAINER -->
+        <div class="tasks container-fluid"> 
+            
+            <!-- CARDS ARE ADDED OVER HERE DYNAMICALLY USING JAVASCRIPT-->
+            <!-- CHECK OUT SCRIPT.JS VARIABLE "cardHtml" FOR MORE -->
+
+        </div> <!-- End of Tasks Container -->
+
+
+        <!-- Dark Mode Modal -->
+        <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-light">
+                        <h5 class="modal-title" id="modalLabel">Oops!</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" id="modalCloseButton"></button>   
+                    </div>
+                    <div class="modal-body bg-dark text-light">
+                        <p id="modalMessage"></p>
+                        </div>
+                        <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Dark Mode Modal -->
+    
+        
+    </div>  <!-- End of APP -->
+    
+
+    <!-- JavaScript -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- Your custom script -->
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>
