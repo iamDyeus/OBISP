@@ -1,0 +1,57 @@
+body{
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.css-card {
+    margin-top: 12%;
+}
+
+.card-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    margin-top: 1.2vh;
+}
+
+.card-heading h1{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 34px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.card-heading p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #07C3F2;
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.btn-clear{
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        background-image: url("../assets/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+
+    .css-card {
+      margin-top: 50%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+
+    .card-heading{
+        text-align: center;
+    }
+  }
+  
